@@ -1,0 +1,61 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  background-color:transparent;
+  color:#fff;
+  font-family:"Seravek";
+}
+
+.block {
+  text-align: center;
+  height: 100%;
+}
+
+.block:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+
+.shout {
+  display:inline-block;
+  vertical-align: middle;
+  width:800px;
+  text-shadow:2px 2px 2px #000;
+}
+
+.shout h1 {
+  font-size:800%;
+}
+
+.shout h2 {
+  font-size:600%;
+}
+
+.shout h3 {
+  font-size:400%;
+  margin-bottom:1em;
+}
+
+.shout h4 {
+  font-size:300%;
+}
+
+.shout h5 {
+  font-size:200%;
+}
+
+.of-highlight {
+  background:#ee3987;
+}
+
+.squishy {
+  max-height:100%;
+  max-width:100%;
+  min-width:100%;
+  vertical-align: middle;
+}

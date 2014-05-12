@@ -2,7 +2,7 @@
 
 ![cepstrum slide](fitc.gif "Showing the Cepstrum::Mesh slide")
 
-These are the slides for a talk on [signal processing](http://en.wikipedia.org/wiki/Signal_processing) I gave at [FITC Toronto 2014](http://fitc.ca/event/to14/). The talk was filmed by [Jimmy Wang](http://jimicy.com/) and is [on youtube here](https://www.youtube.com/watch?v=Rvsiwi_bmgk).
+These are the slides for a talk on [signal processing](http://en.wikipedia.org/wiki/Signal_processing) I gave at [FITC Toronto 2014](http://fitc.ca/event/to14/). The talk was filmed by [Jimmy Wang](http://jimicy.com/) and is [on youtube here](https://www.youtube.com/watch?v=Rvsiwi_bmgk) (the above gif is [via Pearl Chen](https://twitter.com/PearlChen/status/460825313912446976)).
 
 This repo is an [openFrameworks](http://openframeworks.cc/) umbrella app, which contains a bunch of smaller apps  (one "app" per slide). The app uses a [WebKit](http://www.webkit.org/) layer in front of the openFrameworks OpenGL layer, allowing each slide's content to be written as a minimal HTML page. The C++ source for each of the apps can be found in `src/`, whereas the html slides are in `bin/data/slides/`.
 

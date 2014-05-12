@@ -15,7 +15,7 @@ A 32-bit build of [OpenCV 2.4.8](http://opencv.org/) is included (so, this app i
 This app will only work on OSX due to the WebKit layer, ofxAudioUnit and the use of the Accelerate framework. The computer vision slides are fairly cross platform, though, so they should be copy-pasteable if you'd like to experiment with the Convolution slides on Windows, Linux, etc.
 
 - Clone this repo to `openFrameworks/apps/myApps/`
-- Add [ofxCv](https://github.com/kylemcdonald/ofxCv) and [ofxAudioUnit](https://github.com/admsyn/ofxAudioUnit) to `openFrameworks/apps/addons/` if you don't have them already
+- Add [ofxCv](https://github.com/kylemcdonald/ofxCv) and [ofxAudioUnit](https://github.com/admsyn/ofxAudioUnit) to `openFrameworks/addons/` if you don't have them already
 - Open and run the Xcode project included in this repo
 - If this doesn't work for you, please open an issue
 

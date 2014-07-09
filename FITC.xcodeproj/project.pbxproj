@@ -679,7 +679,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cp -f ../../../libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/libfmodex.dylib\"; install_name_tool -change ./libfmodex.dylib @executable_path/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\nmkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\ncp -f \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n";
+			shellScript = "cp -f ../../../libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/libfmodex.dylib\"; install_name_tool -change ./libfmodex.dylib @executable_path/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\n\ncp -f libs/libxtract/libxtract.0.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/libxtract.0.dylib\"; install_name_tool -change ./libxtract.0.dylib @executable_path/libxtract.0.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\n\ncp -f libs/opencv/libopencv_core.2.4.8.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/libopencv_core.2.4.8.dylib\"; install_name_tool -change ./libopencv_core.2.4.8.dylib @executable_path/libopencv_core.2.4.8.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\n\ncp -f libs/opencv/libopencv_imgproc.2.4.8.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/libopencv_imgproc.2.4.8.dylib\"; install_name_tool -change ./libopencv_imgproc.2.4.8.dylib @executable_path/libopencv_imgproc.2.4.8.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\n\nmkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\ncp -f \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -746,6 +746,7 @@
 			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(NATIVE_ARCH)";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
@@ -776,6 +777,7 @@
 			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(NATIVE_ARCH)";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
